@@ -14,6 +14,7 @@ In our study, we leveraged images from the recently released Wilf et al. (2021) 
 We retrieved the assembled image dataset by Wilf et al., (2021). Our dataset consisted part of the cleared and x-rayed leaves, fossil leaves. We filtered the dataset to contain only families with at least fifty representative images. We had a total of ten families and 3,158 images.
 
 
+![Picture1](https://github.com/skdeb/MachineLearningProject/assets/53913657/70c3af60-c58c-49d0-a7d8-3decf5dd7e5f)
 
 
 Figure 1: An example of an image dataset representing both cleared and fossil leaves to be used in the study. (Adapted from Wilf et al., 2021).
