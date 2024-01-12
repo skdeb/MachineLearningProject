@@ -82,4 +82,3 @@ Wilf, P., Wing, S.L., Meyer, H.W., Rose, J.A., Saha, R., Serre, T., Cúneo, N.R.
 x-rayed, and fossil leaves vetted to plant family for human and machine learning. PhytoKeys, 187, p.93. https://doi.org/10.25452/figshare.plus.14980698
 
 Wilf, P., Zhang, S., Chikkerur, S., Little, S.A., Wing, S.L. and Serre, T., 2016. Computer vision cracks the leaf code. Proceedings of the National Academy of Sciences, 113(12), pp.3305-3310.
-![image](https://github.com/skdeb/MachineLearningProject/assets/53913657/03362d0a-5cb9-44f2-863b-b9a5c536252e)
