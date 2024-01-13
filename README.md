@@ -27,6 +27,10 @@ To achieve the aim of this project, we applied convolutional neural network base
 For our study we used Inception-ResNet-v2 architecture (Figure 2) (Szegedy et al., 2016). The choice of this architecture is based on the consideration that the inception module is computationally efficient and the ResNet module has residual connections that provide optimization benefits (Seeland et al., 2019). In addition, other plant leaf image classification studies achieved high accuracy using this network architecture. We used the ‘imagenet’ weights and kept the layer of the base model
 non-trainable. We added a few layers with the base model output which include a global average pooling layer, a dense layer with ‘ReLu’ activation function, and a dropout layer. Finally, the output layer was provided with a ‘softmax’ activation function to predict our studied ten plant families. We compile the model using ‘adam’ as optimizer, ‘categorical cross entropy’ as loss function, and accuracy as performance metrics. The model was trained for 30 epochs with steps per epoch and validation steps equal to length of the training set and validation set respectively.
 
+![Picture2](https://github.com/skdeb/MachineLearningProject/assets/53913657/f33f70dd-1152-43c1-bcdf-3c82738ab5b8)
+
+
+
 
 Figure 2: Inception-Resnet-v2 network architecture (Adapted from Bhatia et al., 2019).
  
@@ -54,12 +58,14 @@ stack of residual units which are each small neural networks with batch normaliz
 ### 3. Results and Discussion
 
 Our approach achieved 71% training accuracy and 72% validation accuracy (Figure 3a) using the Inception-Resnet-v2 architecture. However, the accuracy using the test dataset was 68%. The training and validation loss were both around 0.79 (Figure 3b). Wilf et al. (2016) study using only cleared leaves found 72% accuracy for classifying plants at family and order levels. They used around 7500 images representing two groups where one is 100 images in each of 19 families and the other is 50 images in each of 29 families. They also classify at 19 order levels (up one in the order of taxonomic group than family) with 50 images in each order. The inclusion of fossil leaves (contains more noise in the images) and lower number of images in our study could be a potential reason to have lower test accuracy. Other studies using different types of leaf image dataset achieved considerably higher accuracy in the identification of species (e.g. Carranza-Rojas et al., 2017; Seeland et al., 2019). Training the models with higher number of epochs and fine tuning of the transfer model was found to provide better results. The use of more computational resources in our study has the potential to increase the model performance.
+![Picture3](https://github.com/skdeb/MachineLearningProject/assets/53913657/24b7ab1e-4e2a-489d-9d8e-89d2d33d64cf)
 
  
 Figure 3: a) Training and validation accuracy in each epoch. b) Training and validation loss in each epoch. In both cases validation accuracy and loss fluctuated more compared to training sets.
 
 Among other models tested in our dataset, ResNet 50 performed well in both cases of training and validation sets (Table 1). However, the test dataset accuracy was 68%. In addition the loss was much higher in ResNet 50 compared to
 Inception-ResNet-v2. All other models showed very high accuracy in the training set while the validation accuracy was very low (Table 1). The use of a very small dataset could be a potential reason for model overfitting. However, hyperparameter tuning and use of more leaf images has the potential to get more robust prediction from these tested network architectures.
+<img width="712" alt="Screenshot 2024-01-12 at 5 58 23 PM" src="https://github.com/skdeb/MachineLearningProject/assets/53913657/7d00184b-d143-41c2-aa99-5ae376e0d7c2">
 
 
 
